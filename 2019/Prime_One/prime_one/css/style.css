@@ -1,4 +1,19 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+@font-face {
+  font-family: 'BertholdAkzidenzGroteskBoldCondensed';
+  src: url("../fonts/BertholdAkzidenzGroteskBoldCondensed.eot");
+  src: local("☺"), url("../fonts/BertholdAkzidenzGroteskBoldCondensed.woff") format("woff"), url("../fonts/BertholdAkzidenzGroteskBoldCondensed.ttf") format("truetype"), url("../fonts/BertholdAkzidenzGroteskBoldCondensed.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Bebas';
+  src: url("../fonts/BebasRegular.eot");
+  src: local("☺"), url("../fonts/BebasRegular.woff") format("woff"), url("../fonts/BebasRegular.ttf") format("truetype"), url("../fonts/BebasRegular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 * {
   padding: 0px;
   margin: 0px;
@@ -31,7 +46,7 @@ body {
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
-  font-family: "";
+  font-family: "PT Sans";
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
@@ -44,7 +59,7 @@ body {
         overflow: hidden; } }
 
 input, button, textarea {
-  font-family: ""; }
+  font-family: "PT Sans"; }
 
 input::-ms-clear {
   display: none; }
@@ -78,10 +93,10 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden; }
 
 .container {
-  max-width: 1170px;
+  max-width: 880px;
   margin: 0 auto;
   width: 100%; }
-  @media (max-width: 1182px) {
+  @media (max-width: 892px) {
     .container {
       max-width: 970px; } }
   @media (max-width: 992.98px) {
@@ -173,6 +188,121 @@ h1, h2, h3, h4, h5, h6 {
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background-size: cover; }
+
+header {
+  padding: 29px 0 33px 0;
+  background-color: #fff; }
+
+.header-top {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.header-top-lang {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0; }
+
+.header-top-lang__item {
+  display: block;
+  line-height: 19px;
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: Bebas;
+  letter-spacing: 1px;
+  padding: 0 4px;
+  margin: 0 10px 0 0; }
+  .header-top-lang__item.active {
+    background-color: #000;
+    color: #fff; }
+
+.header-top__link {
+  font-family: 'BertholdAkzidenzGroteskBoldCondensed';
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 15px;
+  color: #000; }
+
+.header-bottom {
+  margin: -10px 0 0 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.header-bottom__column {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.333%;
+  flex: 0 0 33.333%; }
+
+.header-bottom-menu--right .header-bottom-menu-list {
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  text-align: right; }
+  .header-bottom-menu--right .header-bottom-menu-list li {
+    margin: 0 0 0 45px; }
+    .header-bottom-menu--right .header-bottom-menu-list li:first-child {
+      margin: 0; }
+    .header-bottom-menu--right .header-bottom-menu-list li:last-child {
+      margin: 0 0 0 45px; }
+
+.header-bottom-menu-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0; }
+  .header-bottom-menu-list li {
+    margin: 0 45px 0 0; }
+    .header-bottom-menu-list li:last-child {
+      margin: 0; }
+
+.header-bottom-menu__link {
+  font-family: 'BertholdAkzidenzGroteskBoldCondensed';
+  color: #000;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px; }
+
+.header-logo {
+  display: block;
+  text-align: center; }
+
+.header-logo__text {
+  display: block;
+  color: #000;
+  font-family: Bebas;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 8px; }
+
+.header-logo__image {
+  display: block;
+  margin: 13px 0 22px 0; }
 
 /*
 	.header-menu__icon{

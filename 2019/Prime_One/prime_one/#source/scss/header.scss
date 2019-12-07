@@ -1,6 +1,92 @@
 //====================================================================================================
-header{}
+header{padding: 29px 0 33px 0; background-color: #fff;}
 //====================================================================================================
+.header-top {
+	@include flexbox();
+	justify-content: space-between;
+}
+.header-top-lang {
+	@include flexbox();
+}
+.header-top-lang__item {
+	display: block;
+	line-height: 19px;
+	color: #000;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: Bebas;
+	letter-spacing: 1px;
+	padding: 0 4px;
+	margin: 0 10px 0 0;
+	&.active {
+		background-color: #000;
+		color: #fff;	
+	}
+}
+.header-top__link {
+	font-family: 'BertholdAkzidenzGroteskBoldCondensed';
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size: 15px;
+	color: #000;
+}
+.header-bottom {
+	margin: -10px 0 0 0;
+	@include flexbox();
+	align-items: center;
+}
+.header-bottom__column {
+	flex: 0 0 33.333%;
+}
+.header-bottom-menu {
+	&--right {
+		.header-bottom-menu-list {
+			margin: 0;
+			@include flexbox();
+			justify-content: flex-end;
+			text-align: right;
+			li {
+				margin: 0 0 0 45px;
+				&:first-child{
+					margin: 0;
+				}
+				&:last-child{margin: 0 0 0 45px;}
+			}
+		}
+	}
+}
+.header-bottom-menu-list {
+	@include flexbox();
+	li {margin: 0 45px 0 0;
+		&:last-child{margin: 0;}
+	}
+}
+.header-bottom-menu__link {
+	font-family: 'BertholdAkzidenzGroteskBoldCondensed';
+	color: #000;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+.header-logo {
+	display: block;
+	text-align: center;
+}
+.header-logo__text {
+	display: block;
+	color: #000;
+	font-family: Bebas;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 8px;	
+}
+.header-logo__image {
+	display: block;
+	margin: 13px 0 22px 0;
+}
+//====================================================================================================
+
+
 
 /*
 	.header-menu__icon{

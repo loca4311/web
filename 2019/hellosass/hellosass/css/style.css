@@ -75,8 +75,29 @@ h6 {
   font-weight: inherit; }
 
 /*--------------------*/
-body {
-  color: red; }
+.block {
+  width: 31.25%;
+  background-color: #666;
+  padding: 30px;
+  line-height: 60px; }
+  .block .block__text {
+    font-size: 100px; }
+    .block .block__text:hover {
+      color: green; }
+    .block .block__text span {
+      color: green; }
 
-h1 {
+.link {
+  font-size: 50px;
+  color: green;
+  color: blue;
+  text-decoration: underline;
+  font-size: 100px; }
+  .block .link {
+    font-size: 100px; }
+  .link:hover {
+    color: green; }
+
+.link-2 {
+  font-size: 50px;
   color: green; }

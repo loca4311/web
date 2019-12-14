@@ -10,9 +10,12 @@ header {
 .header-top {
   @include flexbox();
   justify-content: space-between;
-  padding: 15px 0 0 0;
   @media (max-width:$md2+px) {
     justify-content: flex-end;
+    padding: 25px 0 0 0;
+  }
+  @media (max-width:$md4+px) {
+    padding: 15px 0 0 0;
   }
 }
 .header-top-lang {
@@ -53,6 +56,9 @@ header {
   @include flexbox();
   align-items: center;
   @media (max-width:$md2+px) {
+    margin: -37px 0 0 0;
+  }
+  @media (max-width:$md4+px) {
     margin: -27px 0 0 0;
   }
 }
@@ -162,7 +168,7 @@ header {
   .header-menu__icon {
     display: block;
     position: absolute;
-    top: 18px;
+    top: 28px;
     left: 10px;
     width: 30px;
     height: 18px;

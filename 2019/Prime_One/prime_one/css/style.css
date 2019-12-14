@@ -425,6 +425,63 @@ header {
     .header-menu.active {
       left: 0; } }
 
+.private {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  background-color: #000; }
+
+.private__column {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%; }
+
+.private__image {
+  height: 100%; }
+
+.private-body {
+  padding: 75px 0 75px 60px; }
+
+.private-body-content {
+  max-width: 305px; }
+
+.private-body__title {
+  font-size: 50px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'BertholdAkzidenzGroteskBoldCondensed';
+  margin-bottom: 30px; }
+
+.private-body__text {
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+  margin-bottom: 50px; }
+
+.private-body-buttons {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.private-body-buttons__link {
+  font-family: 'Bebas';
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: underline;
+  margin: 0 0 0 15px;
+  letter-spacing: 1.5px; }
+
 .form-row {
   display: -webkit-box;
   display: -moz-box;
@@ -438,8 +495,19 @@ header {
   padding: 0px 15px; }
 
 .btn {
+  height: 50px;
+  line-height: 50px;
+  background-color: #000;
   display: inline-block;
-  padding: 0px 0px; }
+  padding: 0px 33px;
+  font-size: 15px;
+  font-family: 'Bebas';
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #fff; }
+  .btn--w {
+    background-color: #fff;
+    color: #000; }
   .btn.fw {
     width: 100%; }
 

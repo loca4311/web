@@ -95,7 +95,50 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
-
+.private {
+	@include flexbox();
+	background-color: #000;
+}
+.private__column {
+	flex: 0 0 50%;
+}
+.private__image {
+	height: 100%;
+}
+.private-body {
+	padding: 75px 0 75px 60px;
+}
+.private-body-content {
+	max-width: 305px;
+}
+.private-body__title {
+	font-size: 50px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'BertholdAkzidenzGroteskBoldCondensed';
+	margin-bottom: 30px;
+}
+.private-body__text {
+	font-size: 15px;
+	line-height: 25px;
+	color: #fff;
+	margin-bottom: 50px;
+}
+.private-body-buttons {
+	@include flexbox();
+	align-items: center;
+}
+.private-body-buttons__item {}
+.private-body-buttons__link {
+	font-family: 'Bebas';
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 15px;
+	text-decoration: underline;
+	margin: 0 0 0 15px;
+	letter-spacing: 1.5px;
+}
 //====================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================

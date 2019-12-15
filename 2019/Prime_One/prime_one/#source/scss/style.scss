@@ -101,12 +101,21 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 }
 .private__column {
 	flex: 0 0 50%;
+	@media (max-width: $md2+px) {
+		flex: 1 1 100%;
+		&:first-child {
+			display: none;
+		}
+	}
 }
 .private__image {
 	height: 100%;
 }
 .private-body {
 	padding: 75px 0 75px 60px;
+	@media (max-width: $md1+px) {
+		padding: 30px 20px 30px 30px;		
+	}
 }
 .private-body-content {
 	max-width: 305px;
@@ -118,12 +127,19 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	color: #fff;
 	font-family: 'BertholdAkzidenzGroteskBoldCondensed';
 	margin-bottom: 30px;
+	@media (max-width: $md1+px) {
+		font-size: 35px;
+		margin-bottom: 20px;
+	}
 }
 .private-body__text {
 	font-size: 15px;
 	line-height: 25px;
 	color: #fff;
 	margin-bottom: 50px;
+	@media (max-width: $md1+px) {
+		margin-bottom: 30px;
+	}
 }
 .private-body-buttons {
 	@include flexbox();

@@ -431,6 +431,10 @@ header {
     .header-menu.active {
       left: 0; } }
 
+@media (max-width: 479.98px) {
+  .header-menu__icon {
+    top: 18px; } }
+
 .private {
   display: -webkit-box;
   display: -moz-box;
@@ -444,12 +448,22 @@ header {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 50%;
   flex: 0 0 50%; }
+  @media (max-width: 750px) {
+    .private__column {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+      flex: 1 1 100%; }
+      .private__column:first-child {
+        display: none; } }
 
 .private__image {
   height: 100%; }
 
 .private-body {
   padding: 75px 0 75px 60px; }
+  @media (max-width: 892px) {
+    .private-body {
+      padding: 30px 20px 30px 30px; } }
 
 .private-body-content {
   max-width: 305px; }
@@ -461,12 +475,19 @@ header {
   color: #fff;
   font-family: 'BertholdAkzidenzGroteskBoldCondensed';
   margin-bottom: 30px; }
+  @media (max-width: 892px) {
+    .private-body__title {
+      font-size: 35px;
+      margin-bottom: 20px; } }
 
 .private-body__text {
   font-size: 15px;
   line-height: 25px;
   color: #fff;
   margin-bottom: 50px; }
+  @media (max-width: 892px) {
+    .private-body__text {
+      margin-bottom: 30px; } }
 
 .private-body-buttons {
   display: -webkit-box;

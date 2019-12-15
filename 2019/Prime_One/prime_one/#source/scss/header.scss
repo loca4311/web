@@ -219,3 +219,9 @@ header {
     }
   }
 }
+
+@media (max-width: $md4+px) {
+  .header-menu__icon {
+    top: 18px;
+  }
+}

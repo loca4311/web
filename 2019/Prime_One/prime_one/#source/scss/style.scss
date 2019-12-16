@@ -43,7 +43,7 @@ $fontfamily:"PT Sans";
 $minwidth:320px;
 $mw:880;
 $md1:$mw+12;
-$md2:750;
+$md2:767.98;
 $md3:767.98;
 $md4:479.98;
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
@@ -98,6 +98,10 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 .private {
 	@include flexbox();
 	background-color: #000;
+	margin-bottom: 75px;
+	@media (max-width:$md2+px) {
+		margin-bottom: 40px;
+	}
 }
 .private__column {
 	flex: 0 0 50%;
@@ -156,6 +160,270 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	letter-spacing: 1.5px;
 }
 //====================================================================================================
+.products {
+	margin-bottom: 40px;
+	@media (max-width:$md2+px) {
+		margin: 0;
+	}
+}
+.products-body {
+	@include flexbox();
+	@media (max-width:$md2+px) {
+		flex-wrap: wrap;
+	}
+}
+.products__column {
+	flex: 0 0 25%;
+	margin-bottom: 40px;
+	@media (max-width:$md2+px) {
+		flex: 0 0 50%;
+	}
+	@media (max-width:380px) {
+		flex: 0 0 100%;
+	}
+}
+.products-item {
+	@include flexbox();
+	height: 100%;
+	flex-direction: column;
+}
+.products-item__image {
+	display: block;
+	padding: 0 0 100% 0;
+	margin-bottom: 25px;
+	@media (max-width:380px) {
+		margin-bottom: 15px;
+	}
+}
+.products-item__title {
+	height: 50px;
+	overflow: hidden;
+	padding: 0 15px 0 0;
+	max-width: 185px;
+	font-size: 25px;
+	font-family: 'BertholdAkzidenzGroteskBoldCondensed';
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #000;
+	margin-bottom: 30px;
+	@media (max-width:380px) {
+		max-width: none;
+		height: auto;
+		overflow: visible;
+		margin-bottom: 20px;
+	}
+}
+.products-item__text {
+	flex: 1 1 auto;
+	padding: 0 5px 0 0;
+	max-width: 185px;
+	font-size: 15px;
+	line-height: 25px;
+	margin-bottom: 25px;
+	@media (max-width:380px) {
+		max-width: none;
+		margin-bottom: 15px;
+	}
+
+}
+.products-item__btn {
+	margin-bottom: 29px;
+}
+.products-item__link {
+	font-family: Bebas;
+	text-transform: uppercase;
+	color: #000;
+	text-decoration: underline;
+	font-size: 15px;
+	letter-spacing: 1.5px;
+}
+//====================================================================================================
+.why {
+
+}
+.why-top {
+	@include flexbox();
+	background-color: #000;
+}
+.why-top__column {
+	flex:  0 0 50%;
+	@media (max-width:$md1+px) {
+		flex:  0 0 100%;
+		&:last-child {
+			display: none;
+		}
+	}
+}
+.why-top__text {
+	padding: 55px 60px 55px 0;
+	text-align: right;  
+	color: #fff;
+	font-family: 'BertholdAkzidenzGroteskBoldCondensed';
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	@media (max-width:$md1+px) {
+		padding: 30px 0;
+		font-size: 40px;
+		text-align: center;
+	}
+	@media (max-width:$md2+px) {
+		padding: 20px 0;
+		font-size: 30px;
+		text-align: center;
+	}
+}
+.why-top__image {
+	height: 100%;
+}
+.why-body {
+	padding-top: 50px;
+	background-color: #ebebeb;	
+	@media (max-width:$md4+px) {
+		padding: 30px 0 0 0;
+	} 
+}
+.why-body-row	{
+	@include flexbox();
+	flex-wrap: wrap;
+}
+.why-body__column {
+	flex: 0 0 50%;
+	margin-bottom: 50px;
+	@media (max-width:$md1+px) {
+		flex: 1 1 100%;
+	}
+	@media (max-width:$md4+px) {
+		margin-bottom: 30px;
+	}
+}
+.why-body-item {
+	@include flexbox();
+}
+.why-body-item__icon {
+	height: 100px;
+	flex: 0 0 100px;
+	@include flexbox();
+	justify-content: center;
+	align-items: center;
+	background-color: #000;
+	@media (max-width:$md4+px) {
+		flex: 0 0 80px;
+		height: 80px;
+		padding: 15px;
+		img{max-width: 100%;}
+	}
+}
+.why-body-item-body	{
+	flex: 1 1 auto;
+	@include flexbox();
+	flex-direction: column;
+	padding-left: 11px;
+}
+.why-body-item-body__title {
+	flex: 1 1 auto;
+	font-size: 25px;
+	font-family: 'BertholdAkzidenzGroteskBoldCondensed';
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	@media (max-width:$md4+px)  {
+		font-size: 20px;
+	}
+}
+.why-body-item-body__text {
+	font-size: 15px;
+	padding: 0 15px 0 0;
+	line-height: 25px;
+}
+//====================================================================================================
+.contacts {padding: 80px 0 0 0;
+	@media (max-width:$md2+px) {
+		padding-top: 30px;
+	}
+}
+.contacts-top {}
+.contacts__title {
+	font-family: 'BertholdAkzidenzGroteskBoldCondensed';
+	text-transform: uppercase;
+	font-size: 50px;
+	letter-spacing: 5px;
+	margin-bottom: 30px;
+}
+.contacts-body {
+	@include flexbox();
+	flex-wrap: wrap;
+}
+.contacts-body__column {
+	flex: 0 0 50%;
+	margin: 0 0 20px 0;
+	@media (max-width:$md2+px) {
+		flex: 1 1 100%;
+	}
+}
+.contacts-body__item {
+	font-size: 15px;
+	color: #000;
+	display: inline-block;
+	line-height: 27px;
+	padding: 0 0 0 35px;
+}
+.contacts-body__item--1 {
+	background: url(../../img/contacts/01.svg) left no-repeat;
+}
+.contacts-body__item--2 {
+	background: url(../../img/contacts/02.svg) left no-repeat;
+}
+.contacts-body__item--3 {
+	background: url(../../img/contacts/03.svg) left no-repeat;
+}
+.contacts-social {
+	@include flexbox();
+}
+.contacts-social__item {
+	margin: 0 30px 0 0;
+	&:last-child {margin: 0;}
+}
+.contacts-content {
+	@include flexbox();
+	background-color: #000;
+	@media (max-width:$md2+px) {
+		display: block;
+	}
+}
+.contacts-content__column {
+	flex: 0 0 50%;
+}
+.contcts-content__map {
+	height: 100%;
+	@media (max-width:$md2+px) {
+		height: 300px;
+	}
+}
+.contacts-content-form {
+	padding: 55px 60px;
+	@media (max-width:$md2+px) {
+		padding: 30px;
+	}
+}
+.contacts-content-form__title {
+	font-family: 'BertholdAkzidenzGroteskBoldCondensed';
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 25px;
+	letter-spacing: 5px;
+	margin-bottom: 30px;	
+}
+.contacts-content-form__body {
+	max-width: 375px;	
+	@media (max-width:$md2+px) {
+		max-width: none;
+	}
+}
+.contacts-content-form-line {
+	margin-bottom: 25px;
+}
+.contacts-content-form-button {}
+.contacts-content-form__btn {}
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
